@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center" id="main-heading">
+        <div class="heading-bg m-10">
+            BMI Calculator
+        </div>
+    </div>
+    <div class="flex justify-center p-4">
+        <label for="height" class="px-2 py-1 text-lg font-semibold">Height :</label>
+        <div class="cm common" id="cm">
+            <input type="number" name="height" id="height"
+                class="ip-box-design px-2 py-1 text-m font-bold text-center w-36">
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <label for="weight" class="px-2 py-1 text-lg font-semibold">Weight :</label>
+        <div class="kg common" id="kg">
+            <input type="number" name="weight" id="weight" class="ip-box-design px-2 py-1 text-m font-bold text-center w-36">
+        </div>
+    </div>
+    <div class="flex justify-center p-10">
+        <button id="calc-bmi" class=" calc-button text-white font-semibold py-2 px-4">
+            Calculate
+        </button>
+    </div>
+    <div class="flex justify-center">
+        <div class="res-heading-bg m-5" id="bmi-res">
+        </div>
+    </div>
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: #f8c29e;
+}
+
+.heading-bg {
+  background-color: #111727;
+  padding: 2rem;
+  color: white;
+  border-radius: 0.75rem;
+  font-size: 2.75rem;
+  font-family: 'Rubik Vinyl', cursive;
+  border: 0.33rem solid rgb(109, 198, 227);
+}
+
+.ip-box-design {
+  border-radius: 0.75rem;
+  /* outline-color:#111727; */
+  /* background-color: #111727; */
+  /* color: white; */
+  border: 0.1rem solid black;
+}
+
+.cm {
+  display: inline-block;
+  position: relative;
+  content: 'cm';
+}
+
+div .common {
+  display: inline-block;
+  position: relative;
+}
+
+/* position the unit to the right of the wrapper */
+div .common::after {
+  position: absolute;
+  top: 3px;
+  right: .75em;
+  transition: all .05s ease-in-out;
+}
+
+/* move unit more to the left on hover or focus within
+     for arrow buttons will appear to the right of number inputs */
+div .common:hover::after,
+div .common:focus-within::after {
+  right: 1.4em;
+}
+
+
+/* set the unit abbreviation for each unit class */
+.cm::after {
+  content: 'CM';
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.kg::after {
+  content: 'KG ';
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* #weight{
+    width: 8rem;
+   } */
+.calc-button {
+  background-color: #111727;
+  border-radius: 1rem;
+  border: 2px solid white;
+}
+
+.calc-button:hover {
+  background-color: darkblue;
+  border-radius: 2rem;
+  border: 2px solid lightblue;
+}
+
+.res-heading-bg {
+  background-color: #111727;
+  /* padding: 1rem; */
+  color: white;
+  border-radius: 0.55rem;
+  font-size: 1.75rem;
+  /* font-family: 'Rubik Vinyl', cursive; */
+  /* border: 0.25rem solid rgb(109, 198, 227); */
+}
